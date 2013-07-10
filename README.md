@@ -3,7 +3,7 @@
 > Small HTML/CSS framework to create nice cross-browser webforms.
 
 ## See it in action
-Check the formanizr website for a [DEMO](http://formanizr.firchow.net).
+Please check the [formanizr website](http://formanizr.firchow.net) for [DEMO](http://formanizr.firchow.net) and [Introduction](http://formanizr.firchow.net).
 
 #### test
 this is just a short test
