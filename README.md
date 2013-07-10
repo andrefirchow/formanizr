@@ -1,12 +1,12 @@
-# formanizr [![Build Status]]
+# formanizr
 
-> Small HTML/CSS framework to create cross-browser webforms.
+> Small HTML/CSS framework to create nice cross-browser webforms.
 
 ## See it in action
-Check the formanizr website for a [DEMO](http://formanizr.firchow.net)
+Check the formanizr website for a [DEMO](http://formanizr.firchow.net).
 
-#### A Simple example
-In this example, the default options are used to replace image references to FirstSpirit $CMS_REF(media:"")$ function calls:
+#### test
+this is just a short test
 
 ```css
 .border {
