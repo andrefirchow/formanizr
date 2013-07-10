@@ -1,0 +1,78 @@
+/*====================================*\
+	$RESPONSIVE
+\*  ----------------------------------*/
+
+@media only screen and (max-width: 767px) {
+
+	.formanizr { -webkit-text-size-adjust: none; -ms-text-size-adjust: none;}
+	
+	.fzr_row {margin: 0;}
+
+	.fzr_col{
+		width: 100%;
+		float:none;
+		margin-left: 0;
+		margin-bottom: 0.5em;
+	}
+
+		.fzr_inline	{
+			margin-bottom: 1em;
+		}
+	
+	.formanizr label{
+		margin: 0 0 0.5em 0;
+		display: block;
+	}
+
+		.formanizr .fzr_inline label,
+		.formanizr label.fzr_inline{
+			margin: 0.857em 1.4em 0.214em 0.214em;
+		}
+		
+	
+	.formanizr input,
+	.formanizr select,
+	.formanizr textarea,
+	.fzr_button,
+	input[type="submit"],
+	input[type="reset"],
+	button{
+		margin: 0 0 1em 0 !important;
+		width: 100%;
+	}
+
+	.fzr_large,
+	.fzr_medium,
+	.fzr_small{
+		width: 100% !important;
+		margin-bottom: 1em;
+	}
+
+	.fzr_right,
+	.fzr_right .fzr_col {
+		text-align: left;
+	}
+	
+	/* clearfix col */
+	.fzr_col{@include clear}
+}
+
+/****
+* example media queries
+*
+* Smaller than standard 960 (devices and browsers)
+  @media only screen and (max-width: 959px) {}
+*
+* Tablet Portrait size to standard 960 (devices and browsers)
+  @media only screen and (min-width: 768px) and (max-width: 959px) {}
+*
+* All Mobile Sizes (devices and browser)
+  @media only screen and (max-width: 767px) {}
+*
+* Mobile Landscape Size to Tablet Portrait (devices and browsers)
+  @media only screen and (min-width: 480px) and (max-width: 767px) {}
+*
+* Mobile Portrait Size to Mobile Landscape Size (devices and browsers)
+  @media only screen and (max-width: 479px) {}
+*
+*/

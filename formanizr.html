@@ -1,0 +1,433 @@
+<?php
+	$currentPage="elements";
+	$title="Formular-Elemente";
+	$description="Übersicht aller mit formanizr gestylten HTML Formular-Elemente. Keine Grafiken, alle Elemente sind ausschliesslich mit CSS designed.";
+	include("php_includes/header.php");
+?>
+	 		
+	<header>
+		<h2>Übersicht Formular-Elemente</h2>
+	</header>
+
+
+	<p>
+		Hier sind alle Formular-Elemente die mit formanizr gestylte werden aufgeführt. Neben den eigentlichen Formular-Komponentnen gehören auch
+		Überschriften, Paragraphs, Fehlermeldungen, Trennlinien und unterschiedliche Ausrichtungen der Labels innerhalb des Formulars dazu.
+	</p>
+
+	<p>
+		Die Labels auf dieser Übersichtsseite haben kein <a href="http://www.w3schools.com/tags/tag_label.asp" target="_blank" rel="nofollow">for-Attribut</a> für ein bestimmtes Formularelement, daher sind die Labels in diesem Beispiel
+		nicht klickbar und auch der Mauszeiger verändert sich bei einem hover nicht.
+	</p>
+
+	<hr/>
+
+	<!--  -->
+	<form class="formanizr fzr_legend-inside fzr_label-top">
+		<fieldset>
+			<legend>Alle Formular-Elemente auf einen Blick</legend>
+			
+			<hr/>
+
+			<h2 class="fzr_headline">Input (type=text)</h2>
+			<div class="fzr_row">
+		
+				<div class="fzr_col fzr_3">
+					<label>Standard</label>
+					<input type="text" />
+				</div><!-- fzr_col -->
+
+				<div class="fzr_col fzr_3">
+					<label>Disabled</label>
+					<input type="text" disabled />
+				</div><!-- fzr_col -->
+
+				<div class="fzr_col fzr_3">
+					<label>Readonly</label>
+					<input type="text" readonly value="readonly" />				
+				</div><!-- fzr_col -->
+
+				<div class="fzr_col fzr_3">
+					<label>Placeholder</label>
+					<input type="text" placeholder="Placeholder" />					
+				</div><!-- fzr_col -->
+		
+			</div><!-- .fzr_row -->
+
+			<hr/>
+
+			<h2 class="fzr_headline">Textarea</h2>
+			<div class="fzr_row">
+		
+				<div class="fzr_col fzr_3">
+					<label>Standard</label>
+					<textarea class="fzr_height-small"></textarea>					
+				</div><!-- fzr_col -->
+
+				<div class="fzr_col fzr_3">
+					<label>Disabled</label>
+					<textarea disabled class="fzr_height-small"></textarea>							
+				</div><!-- fzr_col -->
+
+				<div class="fzr_col fzr_3">
+					<label>Readonly</label>
+					<textarea readonly class="fzr_height-small">readonly</textarea>
+				</div><!-- fzr_col -->
+
+				<div class="fzr_col fzr_3">
+					<label>Placeholder</label>
+					<textarea placeholder="Placeholder" class="fzr_height-small"></textarea>
+				</div><!-- fzr_col -->
+		
+			</div><!-- .fzr_row -->
+
+			<hr/>
+
+			<h2 class="fzr_headline">Select</h2>
+			<div class="fzr_row">
+		
+				<div class="fzr_col fzr_3">
+					<label>Standard</label>
+					<select>
+						<option value="-">Lorem</option>
+						<option value="1">Ipsum</option>
+					</select>						
+				</div><!-- fzr_col -->
+
+				<div class="fzr_col fzr_3">
+					<label>Disabled</label>
+					<select disabled>
+						<option value="-" disabled selected>Lorem</option>
+						<option value="1" disabled>Ipsum</option>
+					</select>						
+				</div><!-- fzr_col -->
+
+				<div class="fzr_col fzr_3">
+					<label>Readonly</label>
+					<select readonly>
+						<option value="-">Lorem</option>
+						<option value="1">Ipsum</option>
+					</select>							
+				</div><!-- fzr_col -->
+		
+			</div><!-- .fzr_row -->
+
+			<hr/>
+
+			<h2 class="fzr_headline">Select multiple</h2>
+			<div class="fzr_row">
+		
+				<div class="fzr_col fzr_3">
+					<label>Standard</label>
+					<select multiple>
+						<option value="-">Lorem</option>
+						<option value="1">Ipsum</option>
+						<option value="2">Lorem</option>
+						<option value="3">Ipsum</option>
+					</select>						
+				</div><!-- fzr_col -->
+
+				<div class="fzr_col fzr_3">
+					<label>Disabled</label>
+					<select multiple disabled>
+						<option value="-">Lorem</option>
+						<option value="1">Ipsum</option>
+						<option value="2">Lorem</option>
+						<option value="3">Ipsum</option>
+					</select>						
+				</div><!-- fzr_col -->
+
+				<div class="fzr_col fzr_3">
+					<label>Readonly</label>
+					<select multiple readonly>
+						<option value="-">Lorem</option>
+						<option value="1">Ipsum</option>
+						<option value="2">Lorem</option>
+						<option value="3">Ipsum</option>
+					</select>							
+				</div><!-- fzr_col -->
+		
+			</div><!-- .fzr_row -->
+
+			<hr/>
+
+			<h2 class="fzr_headline">Check- und Radio-Boxen</h2>
+			<div class="fzr_row">
+		
+				<div class="fzr_col fzr_3">
+					<label>Standard</label>
+					<div class="fzr_inline">
+						<input type="checkbox" />
+						<label>Checkbox 1</label>
+					</div><!-- /.fzr_inline -->
+					<div class="fzr_inline">
+						<input type="checkbox" />
+						<label>Checkbox 2</label>
+					</div><!-- /.fzr_inline -->
+				</div><!-- fzr_col -->
+
+				<div class="fzr_col fzr_3">
+					<label>Disabled</label>
+					<div class="fzr_inline">
+						<input type="checkbox" disabled />
+						<label>Checkbox 1</label>
+					</div><!-- /.fzr_inline -->
+					<div class="fzr_inline">
+						<input type="checkbox" disabled />
+						<label>Checkbox 2</label>
+					</div><!-- /.fzr_inline -->
+				</div><!-- fzr_col -->
+
+				<div class="fzr_col fzr_3">
+					<label>Standard</label>
+					<div class="fzr_inline">
+						<input type="radio" name="radiogroup1" />
+						<label>Radio 1</label>
+					</div><!-- /.fzr_inline -->
+					<div class="fzr_inline">
+						<input type="radio" name="radiogroup1" />
+						<label>Radio 2</label>
+					</div><!-- /.fzr_inline -->
+				</div><!-- fzr_col -->
+
+				<div class="fzr_col fzr_3">
+					<label>Disabled</label>
+					<div class="fzr_inline">
+						<input type="radio" disabled name="radiogroup2" />
+						<label>Radio 1</label>
+					</div><!-- /.fzr_inline -->
+					<div class="fzr_inline">
+						<input type="radio" disabled name="radiogroup2" />
+						<label>Radio 2</label>
+					</div><!-- /.fzr_inline -->
+				</div><!-- fzr_col -->
+		
+			</div><!-- .fzr_row -->
+
+			<hr/>
+
+			<h2 class="fzr_headline">Icons</h2>
+ 			<div class="fzr_row">
+				<div class="fzr_col fzr_3">
+					<label>E-Mail</label>
+					<input type="email" class="fzr_icon-email" />
+				</div><!-- fzr_col -->
+			
+				<div class="fzr_col fzr_3">
+					<label>URI</label>
+					<input type="url" class="fzr_icon-url" />
+				</div><!-- fzr_col -->
+			
+				<div class="fzr_col fzr_3">
+					<label>Telefon</label>
+					<input type="tel" class="fzr_icon-phone" />
+				</div><!-- fzr_col -->
+				
+				<div class="fzr_col fzr_3">
+					<label>Suche</label>
+					<input type="search" class="fzr_icon-search" />
+				</div><!-- fzr_col -->
+			</div><!-- /.fzr_row -->
+			
+ 			<div class="fzr_row">
+				<div class="fzr_col fzr_3">
+					<label>Nummer</label>
+					<input type="number" class="fzr_icon-number" />
+				</div><!-- fzr_col -->
+			
+				<div class="fzr_col fzr_3">
+					<label>Bereich</label>
+					<input type="range" class="fzr_icon-range" />
+				</div><!-- fzr_col -->
+				
+				<div class="fzr_col fzr_3">
+					<label>Datum</label>
+					<input type="date" class="fzr_icon-date" />
+				</div><!-- fzr_col -->
+				
+				<div class="fzr_col fzr_3">
+					<label>Zeit</label>
+					<input type="time" class="fzr_icon-time" />
+				</div><!-- fzr_col -->
+			</div><!-- /.fzr_row -->
+
+			<hr/>
+
+			<h2 class="fzr_headline">Labels</h2>
+			<div class="fzr_row">
+		
+				<div class="fzr_col fzr_3">
+					<label>
+						Label links mit Zusatz
+						<span class="fzr_add-on">Hier steht noch eine kurze Info</span>
+					</label>
+					<input type="text" />
+				</div><!-- fzr_col -->
+
+				<div class="fzr_col fzr_3 fzr_right">
+					<label>
+						Label rechts mit Zusatz
+						<span class="fzr_add-on">Hier steht noch eine kurze Info</span>
+					</label>
+					<input type="text" />
+				</div><!-- fzr_col -->
+
+				<div class="fzr_col fzr_6">
+					<label>
+						Label links mit Zusatz
+						<span class="fzr_add-on">Hier steht noch eine kurze Info</span>
+					</label>
+					<select>
+						<option value="-">Lorem</option>
+						<option value="1">Ipsum</option>
+					</select>
+				</div><!-- fzr_col -->
+		
+			</div><!-- .fzr_row -->
+
+			<div class="fzr_row fzr_label-middle">
+		
+				<div class="fzr_col fzr_1">
+					<label>Label</label>
+				</div><!-- fzr_col -->
+
+				<div class="fzr_col fzr_2">
+					<input type="text" />
+				</div><!-- fzr_col -->
+
+				<div class="fzr_col fzr_1 fzr_right">
+					<label>Label</label>
+				</div><!-- fzr_col -->
+
+				<div class="fzr_col fzr_2">
+					<select>
+						<option value="-">Lorem</option>
+						<option value="1">Ipsum</option>
+					</select>
+				</div><!-- fzr_col -->
+
+				<div class="fzr_col fzr_1">
+					<label>Label</label>
+				</div><!-- fzr_col -->
+
+				<div class="fzr_col fzr_3">
+					<div class="fzr_inline">
+						<input type="radio" name="radiogroup2" />
+						<label>Radio 1</label>
+					</div><!-- /.fzr_inline -->
+					<div class="fzr_inline">
+						<input type="radio" name="radiogroup2" />
+						<label>Radio 2</label>
+					</div><!-- /.fzr_inline -->
+				</div><!-- fzr_col -->
+
+				<div class="fzr_col fzr_2">
+					<span class="fzr_hint">Kurzer Hinweistext</span>
+				</div><!-- fzr_col -->
+		
+			</div><!-- .fzr_row -->
+
+			<hr/>
+
+			<h2 class="fzr_headline">Fehlermeldungen</h2>
+			<div class="fzr_row">
+		
+				<div class="fzr_col fzr_3">
+					<label>
+						Label links mit Zusatz
+						<span class="fzr_add-on">Hier steht noch eine kurze Info</span>
+					</label>
+					<input type="text" class="fzr_error" />
+					<label class="fzr_error-msg">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</label>
+				</div><!-- fzr_col -->
+
+				<div class="fzr_col fzr_3 fzr_right">
+					<label>
+						Label rechts mit Zusatz
+						<span class="fzr_add-on">Hier steht noch eine kurze Info</span>
+					</label>
+					<input type="text" class="fzr_error" />
+					<label class="fzr_error-msg">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</label>
+				</div><!-- fzr_col -->
+
+				<div class="fzr_col fzr_6">
+					<label>
+						Label links mit Zusatz
+						<span class="fzr_add-on">Hier steht noch eine kurze Info</span>
+					</label>
+					<select class="fzr_error">
+						<option value="-">Lorem</option>
+						<option value="1">Ipsum</option>
+					</select>
+					<label class="fzr_error-msg">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</label>
+				</div><!-- fzr_col -->
+		
+			</div><!-- .fzr_row -->
+
+			<div class="fzr_row fzr_label-middle">
+		
+				<div class="fzr_col fzr_1">
+					<label>Label</label>
+				</div><!-- fzr_col -->
+
+				<div class="fzr_col fzr_2">
+					<input type="text" />
+				</div><!-- fzr_col -->
+
+				<div class="fzr_col fzr_1 fzr_right">
+					<label>Label</label>
+				</div><!-- fzr_col -->
+
+				<div class="fzr_col fzr_2">
+					<select>
+						<option value="-">Lorem</option>
+						<option value="1">Ipsum</option>
+					</select>
+				</div><!-- fzr_col -->
+
+				<div class="fzr_col fzr_1">
+					<label>Label</label>
+				</div><!-- fzr_col -->
+
+				<div class="fzr_col fzr_3">
+					<div class="fzr_inline">
+						<input type="radio" name="radiogroup2" />
+						<label>Radio 1</label>
+					</div><!-- /.fzr_inline -->
+					<div class="fzr_inline">
+						<input type="radio" name="radiogroup2" />
+						<label>Radio 2</label>
+					</div><!-- /.fzr_inline -->
+				</div><!-- fzr_col -->
+
+				<div class="fzr_col fzr_2">
+					<span class="fzr_hint">Kurzer Hinweistext</span>
+				</div><!-- fzr_col -->
+		
+			</div><!-- .fzr_row -->
+
+			<hr/>
+
+			<h2 class="fzr_headline">Text</h2>
+			<p>Lorem ipsum dolor sit <a href="#">Textlink</a> amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+			<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+
+			<hr/>
+
+			<h2 class="fzr_headline">Buttons</h2>
+			<div class="fzr_row fzr_label-middle">
+				<div class="fzr_col fzr_4">
+					<span class="fzr_hint"><span class="fzr_mandatory fzr_left">*</span> Eingabe erforderlich.</span>
+				</div><!-- /.fzr_col -->
+				<div class="fzr_col fzr_8 fzr_right">
+					<input type="submit" value="Button Standard disabled" disabled="disabled" />
+					<input type="submit" value="Button Higlight disabled" class="fzr_highlight" disabled="disabled" />
+					<input type="submit" value="Button Standard" />
+					<input type="submit" value="Button Higlight" class="fzr_highlight" />
+				</div><!-- /.fzr_col -->
+			</div><!-- /.fzr_row -->
+
+		</fieldset>
+	</form>
+		 		
+<?php include("php_includes/footer.php"); ?>

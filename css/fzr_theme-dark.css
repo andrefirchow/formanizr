@@ -1,0 +1,227 @@
+@charset "UTF-8";
+/*====================================*\** FORMANIZR <<<<<<<<<<<<<<<<<<<<<<<<<<<** Author: Andre Firchow* Website: http://firchow.net/* Name: Formanizr Theme DARK* Version: 0.2 beta* Date: 03.03.2013*\*------------------------------------*/
+/*====================================*\	$IMPORTS\*  ----------------------------------*/
+/*====================================*\
+$VARS
+\*  ----------------------------------*/
+/*====================================*\
+$COLORS
+\*  ----------------------------------*/
+/****
+* typo
+*/
+/****
+* inputs
+*/
+/****
+* buttons
+*/
+/*====================================*\	$COLORS\*  ----------------------------------*/
+/* line 1, ../sass/fzr_theme-dark.scss */
+.formanizr.fzr_theme-dark {
+  color: #9ea1a2;
+  /****	* selection	*/
+  /****	* mostly inputs, textareas and selects	*/
+  /****		* focus		*/
+  /****		* disabled		*/
+  /****		* readonly		*/
+  /****	* button standard	*/
+  /****		* button hover status		*/
+  /****	* button highlight	*/
+  /****		* button highlight hover		*/
+  /****	* button disabled (all)	*/
+  /****		* button highlight disabled		*/
+  /****	* labels and typo	*/
+  /****	* placeholder	*/
+  /****	* error	*/
+  /****	* anchors	*/
+  /****	* headline	*/
+  /****	* fieldset	*/
+  /****	* icons	*/
+  /****	* divider	*/
+}
+/* line 1, ../sass/fzr_theme-dark.scss */
+.formanizr.fzr_theme-dark ::selection {
+  background: #196499;
+  color: white;
+}
+/* line 1, ../sass/fzr_theme-dark.scss */
+.formanizr.fzr_theme-dark ::-moz-selection {
+  background: #196499;
+  color: white;
+}
+/* line 1, ../sass/fzr_theme-dark.scss */
+.formanizr.fzr_theme-dark input[type="text"], .formanizr.fzr_theme-dark input[type="password"], .formanizr.fzr_theme-dark input[type="file"], .formanizr.fzr_theme-dark input[type="date"], .formanizr.fzr_theme-dark input[type="datetime"], .formanizr.fzr_theme-dark input[type="email"], .formanizr.fzr_theme-dark input[type="number"], .formanizr.fzr_theme-dark input[type="search"], .formanizr.fzr_theme-dark input[type="tel"], .formanizr.fzr_theme-dark input[type="time"], .formanizr.fzr_theme-dark input[type="url"], .formanizr.fzr_theme-dark input[type="range"], .formanizr.fzr_theme-dark textarea, .formanizr.fzr_theme-dark select {
+  border-color: #1f2124 #1f2124 #515759 #3c4043;
+  background-color: #2b2e31;
+  color: #bbbdbe;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0 1px 1px inset;
+  -moz-box-shadow: rgba(0, 0, 0, 0.5) 0 1px 1px inset;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 1px 1px inset;
+}
+/* line 1, ../sass/fzr_theme-dark.scss */
+.formanizr.fzr_theme-dark input[type="text"]:focus, .formanizr.fzr_theme-dark input[type="password"]:focus, .formanizr.fzr_theme-dark input[type="file"]:focus, .formanizr.fzr_theme-dark input[type="date"]:focus, .formanizr.fzr_theme-dark input[type="datetime"]:focus, .formanizr.fzr_theme-dark input[type="email"]:focus, .formanizr.fzr_theme-dark input[type="number"]:focus, .formanizr.fzr_theme-dark input[type="search"]:focus, .formanizr.fzr_theme-dark input[type="tel"]:focus, .formanizr.fzr_theme-dark input[type="time"]:focus, .formanizr.fzr_theme-dark input[type="url"]:focus, .formanizr.fzr_theme-dark input[type="range"]:focus, .formanizr.fzr_theme-dark textarea:focus, .formanizr.fzr_theme-dark select:focus {
+  background-color: #222527;
+  border-color: #1f2124;
+  color: white;
+  -webkit-box-shadow: rgba(51, 148, 216, 0.4) 0 0 3px 2px;
+  -moz-box-shadow: rgba(51, 148, 216, 0.4) 0 0 3px 2px;
+  box-shadow: rgba(51, 148, 216, 0.4) 0 0 3px 2px;
+}
+/* line 1, ../sass/fzr_theme-dark.scss */
+.formanizr.fzr_theme-dark input[disabled], .formanizr.fzr_theme-dark textarea[disabled], .formanizr.fzr_theme-dark select[disabled] {
+  background: #34383b;
+  color: #666666;
+}
+/* line 1, ../sass/fzr_theme-dark.scss */
+.formanizr.fzr_theme-dark input[readonly], .formanizr.fzr_theme-dark textarea[readonly], .formanizr.fzr_theme-dark select[readonly] {
+  color: #666666;
+}
+/* line 1, ../sass/fzr_theme-dark.scss */
+.formanizr.fzr_theme-dark input[type="submit"], .formanizr.fzr_theme-dark input[type="reset"], .formanizr.fzr_theme-dark button, .formanizr.fzr_theme-dark .fzr_button {
+  background: #575e62;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #575e62), color-stop(100%, #3d4245));
+  background-image: -webkit-linear-gradient(top, #575e62, #3d4245);
+  background-image: -moz-linear-gradient(top, #575e62, #3d4245);
+  background-image: -o-linear-gradient(top, #575e62, #3d4245);
+  background-image: linear-gradient(top, #575e62, #3d4245);
+  -webkit-box-shadow: #72787c 0 1px 0 0 inset;
+  -moz-box-shadow: #72787c 0 1px 0 0 inset;
+  box-shadow: #72787c 0 1px 0 0 inset;
+  border: 1px solid #1f2124;
+  border-color: #1f2124 #1f2124 #515759 #3c4043;
+  color: #e5e5e6;
+  text-shadow: 1px 1px 0px #333333;
+}
+/* line 1, ../sass/fzr_theme-dark.scss */
+.formanizr.fzr_theme-dark input[type="submit"]:hover, .formanizr.fzr_theme-dark input[type="reset"]:hover, .formanizr.fzr_theme-dark button:hover, .formanizr.fzr_theme-dark .fzr_button:hover {
+  background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #575e62), color-stop(100%, #3d4245));
+  background-image: -webkit-linear-gradient(bottom, #575e62, #3d4245);
+  background-image: -moz-linear-gradient(bottom, #575e62, #3d4245);
+  background-image: -o-linear-gradient(bottom, #575e62, #3d4245);
+  background-image: linear-gradient(bottom, #575e62, #3d4245);
+  color: white;
+}
+/* line 1, ../sass/fzr_theme-dark.scss */
+.formanizr.fzr_theme-dark input[type="submit"].fzr_highlight, .formanizr.fzr_theme-dark input[type="reset"].fzr_highlight, .formanizr.fzr_theme-dark button.fzr_highlight, .formanizr.fzr_theme-dark .fzr_button.fzr_highlight {
+  -webkit-box-shadow: #65b2e8 0 1px 0 0 inset;
+  -moz-box-shadow: #65b2e8 0 1px 0 0 inset;
+  box-shadow: #65b2e8 0 1px 0 0 inset;
+  background: #4d94de;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #4d94de), color-stop(100%, #215a88));
+  background-image: -webkit-linear-gradient(top, #4d94de, #215a88);
+  background-image: -moz-linear-gradient(top, #4d94de, #215a88);
+  background-image: -o-linear-gradient(top, #4d94de, #215a88);
+  background-image: linear-gradient(top, #4d94de, #215a88);
+  border: 1px solid #215a88;
+  color: white;
+  text-shadow: 1px 1px 0px #215a88;
+}
+/* line 1, ../sass/fzr_theme-dark.scss */
+.formanizr.fzr_theme-dark input[type="submit"].fzr_highlight:hover, .formanizr.fzr_theme-dark input[type="reset"].fzr_highlight:hover, .formanizr.fzr_theme-dark button.fzr_highlight:hover, .formanizr.fzr_theme-dark .frz-button.fzr_highlight:hover {
+  background: #215a88;
+  background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #4d94de), color-stop(100%, #215a88));
+  background-image: -webkit-linear-gradient(bottom, #4d94de, #215a88);
+  background-image: -moz-linear-gradient(bottom, #4d94de, #215a88);
+  background-image: -o-linear-gradient(bottom, #4d94de, #215a88);
+  background-image: linear-gradient(bottom, #4d94de, #215a88);
+}
+/* line 1, ../sass/fzr_theme-dark.scss */
+.formanizr.fzr_theme-dark input[type="submit"][disabled=disabled], .formanizr.fzr_theme-dark input[type="reset"][disabled=disabled], .formanizr.fzr_theme-dark button.disabled, .formanizr.fzr_theme-dark .fzr_button.disabled, .formanizr.fzr_theme-dark input[type="submit"].fzr_highlight[disabled=disabled], .formanizr.fzr_theme-dark input[type="reset"].fzr_highlight[disabled=disabled], .formanizr.fzr_theme-dark button.fzr_highlight.disabled, .formanizr.fzr_theme-dark .fzr_button.fzr_highlight.disabled, .formanizr.fzr_theme-dark input[type="submit"][disabled=disabled]:hover, .formanizr.fzr_theme-dark input[type="reset"][disabled=disabled]:hover, .formanizr.fzr_theme-dark button.disabled:hover, .formanizr.fzr_theme-dark .fzr_button.disabled:hover, .formanizr.fzr_theme-dark input[type="submit"].fzr_highlight[disabled=disabled]:hover, .formanizr.fzr_theme-dark input[type="reset"].fzr_highlight[disabled=disabled]:hover, .formanizr.fzr_theme-dark button.fzr_highlight.disabled:hover, .formanizr.fzr_theme-dark .fzr_button.fzr_highlight.disabled:hover {
+  background: #575e62;
+  color: #999999 !important;
+}
+/* line 1, ../sass/fzr_theme-dark.scss */
+.formanizr.fzr_theme-dark input[type="submit"].fzr_highlight[disabled=disabled], .formanizr.fzr_theme-dark input[type="reset"].fzr_highlight[disabled=disabled], .formanizr.fzr_theme-dark button.fzr_highlight.disabled, .formanizr.fzr_theme-dark .fzr_button.fzr_highlight.disabled, .formanizr.fzr_theme-dark input[type="submit"].fzr_highlight[disabled=disabled]:hover, .formanizr.fzr_theme-dark input[type="reset"].fzr_highlight[disabled=disabled]:hover, .formanizr.fzr_theme-dark button.fzr_highlight.disabled:hover, .formanizr.fzr_theme-dark .fzr_button.fzr_highlight.disabled:hover {
+  background: #235d8d;
+  color: #67acc6;
+}
+/* line 1, ../sass/fzr_theme-dark.scss */
+.formanizr.fzr_theme-dark label {
+  color: #9ea1a2;
+}
+/* line 1, ../sass/fzr_theme-dark.scss */
+.formanizr.fzr_theme-dark label .fzr_add-on, .formanizr.fzr_theme-dark .fzr_hint {
+  color: #64686a;
+}
+/* line 1, ../sass/fzr_theme-dark.scss */
+.formanizr.fzr_theme-dark .fzr_error-msg, .formanizr.fzr_theme-dark .fzr_mandatory {
+  color: #df6a24 !important;
+}
+/* line 1, ../sass/fzr_theme-dark.scss */
+.formanizr.fzr_theme-dark input::-webkit-input-placeholder {
+  color: #4b5155;
+}
+/* line 1, ../sass/fzr_theme-dark.scss */
+.formanizr.fzr_theme-dark input:-moz-placeholder {
+  color: #4b5155;
+}
+/* line 1, ../sass/fzr_theme-dark.scss */
+.formanizr.fzr_theme-dark input:-ms-input-placeholder {
+  color: #4b5155;
+}
+/* line 1, ../sass/fzr_theme-dark.scss */
+.formanizr.fzr_theme-dark input.fzr_error, .formanizr.fzr_theme-dark select.fzr_error, .formanizr.fzr_theme-dark textarea.fzr_error {
+  border-color: #df6a24 !important;
+}
+/* line 1, ../sass/fzr_theme-dark.scss */
+.formanizr.fzr_theme-dark a, .formanizr.fzr_theme-dark a:visited {
+  color: #529adf;
+}
+/* line 1, ../sass/fzr_theme-dark.scss */
+.formanizr.fzr_theme-dark a:active, .formanizr.fzr_theme-dark a:hover {
+  color: white;
+}
+/* line 1, ../sass/fzr_theme-dark.scss */
+.formanizr.fzr_theme-dark .fzr_headline {
+  color: #9ea1a2;
+}
+/* line 1, ../sass/fzr_theme-dark.scss */
+.formanizr.fzr_theme-dark fieldset {
+  border-color: #1f2124;
+  background-color: #3d4245;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0 1px 1px inset;
+  -moz-box-shadow: rgba(0, 0, 0, 0.5) 0 1px 1px inset;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 1px 1px inset;
+}
+/* line 1, ../sass/fzr_theme-dark.scss */
+.formanizr.fzr_theme-dark legend {
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}
+/* line 1, ../sass/fzr_theme-dark.scss */
+.formanizr.fzr_theme-dark .fzr_icon-time {
+  background-image: url(../img/formanizr/theme-dark/icons/time.png);
+}
+/* line 1, ../sass/fzr_theme-dark.scss */
+.formanizr.fzr_theme-dark .fzr_icon-date {
+  background-image: url(../img/formanizr/theme-dark/icons/date.png);
+}
+/* line 1, ../sass/fzr_theme-dark.scss */
+.formanizr.fzr_theme-dark .fzr_icon-search {
+  background-image: url(../img/formanizr/theme-dark/icons/search.png);
+}
+/* line 1, ../sass/fzr_theme-dark.scss */
+.formanizr.fzr_theme-dark .fzr_icon-email {
+  background-image: url(../img/formanizr/theme-dark/icons/email.png);
+}
+/* line 1, ../sass/fzr_theme-dark.scss */
+.formanizr.fzr_theme-dark .fzr_icon-url {
+  background-image: url(../img/formanizr/theme-dark/icons/url.png);
+}
+/* line 1, ../sass/fzr_theme-dark.scss */
+.formanizr.fzr_theme-dark .fzr_icon-phone {
+  background-image: url(../img/formanizr/theme-dark/icons/phone.png);
+}
+/* line 1, ../sass/fzr_theme-dark.scss */
+.formanizr.fzr_theme-dark .fzr_icon-number {
+  background-image: url(../img/formanizr/theme-dark/icons/number.png);
+}
+/* line 1, ../sass/fzr_theme-dark.scss */
+.formanizr.fzr_theme-dark .fzr_icon-range {
+  background-image: url(../img/formanizr/theme-dark/icons/range.png);
+}
+/* line 1, ../sass/fzr_theme-dark.scss */
+.formanizr.fzr_theme-dark hr {
+  background-color: #4b5155;
+}

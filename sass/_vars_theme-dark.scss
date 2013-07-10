@@ -1,0 +1,69 @@
+/*====================================*\
+$VARS
+\*  ----------------------------------*/
+
+
+/*====================================*\
+$COLORS
+\*  ----------------------------------*/
+$color_fieldset-background             : #3d4245;
+$color_text                            : #9EA1A2;
+$color_label                           : #9EA1A2;
+$color_inline-label                    : #333;
+$color_legend                          : #fff;
+$color_legend-shadow                   : #000;
+$color_selection-background            : #196499;
+$color_selection-text                  : #fff;
+$color_divider                         : #4B5155;
+
+
+/****
+* typo
+*/
+$color_error                           : #DF6A24;
+$color_hint                            : #64686a;
+$color_anchor                          : #529adf;
+$color_anchor-hover                    : #fff;
+
+/****
+* inputs
+*/
+$color_input-text                      : #bbbdbe;
+$color_input-background                : #2b2e31;
+$color_input-background-focus          : #222527;
+$color_input-background-disabled       : #34383b;
+
+$color_input-focus                     : #fff;
+$color_input-disabled                  : #666;
+$color_input-placeholder               : #4b5155;
+
+$color_input-border-top                : #1f2124;
+$color_input-border-right              : #1f2124;
+$color_input-border-bottom             : #515759;
+$color_input-border-left               : #3c4043;
+
+$color_input-border-focus              : #1F2124;
+$color_input-border-focus-glow         : rgba(51,148,216, 0.40);
+
+$color_input-shadow                    : rgba(0, 0, 0, 0.5);
+$color_fieldset-shadow                 : rgba(0, 0, 0, 0.1);
+
+
+/****
+* buttons
+*/
+$color_button-gradient-first           : #575e62;
+$color_button-gradient-second          : #3d4245;
+$color_button-text                     : #e5e5e6;
+$color_button-text-hover               : #fff;
+$color_button-text-shadow              : #333;
+$color_button-box-shadow               : #72787c;
+$color_button-text-disabled            : #999;
+
+$color_button-highlight-gradient-first : #4d94de;
+$color_button-highlight-gradient-second: #215a88;
+$color_button-highlight-text           : #fff;
+$color_button-highlight-box-shadow     : #65b2e8;
+
+$color_button-highlight-text-disabled  : #67acc6;
+$color_button-highlight-bg-disabled    : #235d8d;

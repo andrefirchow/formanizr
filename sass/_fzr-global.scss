@@ -1,0 +1,19 @@
+/*====================================*\
+	$GLOBAL
+\*  ----------------------------------*/
+
+/****
+* font settings - size/color
+*/
+.formanizr{
+	font-size: 14px !important;
+	color: $color_text;
+	line-height: 1 !important;
+}
+
+	.formanizr.fzr_tiny,
+	.formanizr .fzr_tiny {font-size: 12px !important;}
+	.formanizr.fzr_normal,
+	.formanizr .fzr_normal {font-size: 14px !important;}
+	.formanizr.fzr_big,
+	.formanizr .fzr_big {font-size: 16px !important;}

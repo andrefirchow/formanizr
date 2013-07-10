@@ -1,0 +1,46 @@
+/*====================================*\
+	$GRID
+\*  ----------------------------------*/
+
+/****
+* row
+*/
+.fzr_row {margin: 0 0 1.5em -1.66666666666%;}
+
+
+/****
+* clearfix for row
+*/
+	.fzr_row{@include clear}
+
+
+/****
+* col
+*/
+.fzr_col{
+	display: block;
+	float:left;
+	text-align: left;
+	margin-left: 1.66666666666%;
+	vertical-align: middle;
+}
+
+
+/****
+* sizes of the cols
+*/
+.fzr_1 	{ width: 6.6666666666667%; }
+.fzr_2 	{ width: 15.0%; }
+.fzr_3 	{ width: 23.333333333333%; }
+.fzr_4 	{ width: 31.666666666667%; }
+.fzr_5 	{ width: 40%; }
+.fzr_6 	{ width: 48.333333333333%; }
+.fzr_7 	{ width: 56.666666666667%; }
+.fzr_8 	{ width: 65.0%; }
+.fzr_9 	{ width: 73.333333333333%; }
+.fzr_10	{ width: 81.666666666667%; }
+.fzr_11	{ width: 90%; }
+.fzr_12	{ width: 98.333333333333%; }
+
+.fzr_alpha{margin-left:0px;}
+.fzr_omega{margin-right:0px;}

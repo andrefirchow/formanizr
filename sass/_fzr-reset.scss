@@ -1,0 +1,38 @@
+/*====================================*\
+	$RESET
+\*  ----------------------------------*/
+
+.box-sizing{display: none;}
+.no-box-sizing .box-sizing{display: block;}
+
+.formanizr{
+
+	fieldset,
+	form,
+	label,
+	legend {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+	}
+
+
+	/****
+	* reset 'search-field' styling on webkit
+	*/
+	input[type=search]::-webkit-search-cancel-button,
+	input[type=search]::-webkit-search-decoration,
+	input[type=search]::-webkit-search-results-button,
+	input[type=search]::-webkit-search-results-decoration {
+	  -webkit-appearance:none;
+	}
+
+	input[type=search] {
+	  -webkit-appearance:textfield;
+	  -webkit-box-sizing:content-box;
+	}
+
+}

@@ -1,0 +1,47 @@
+/*====================================*\
+	$FIELDSET
+\*  ----------------------------------*/
+
+.formanizr {
+
+	/****
+	* fieldset
+	*/
+	fieldset{
+		border: 1px solid $color_input-border-top;
+		padding: 1.5em 1.5em 0 1.5em;
+		background-color: $color_fieldset-background;
+		padding-top: 2.5em;
+		margin-bottom: 1.5em;
+		position: relative;
+		@include border-radius($border-radius);
+		@include box-shadow($color_fieldset-shadow 0 1px 0 0);
+	}
+
+
+	/****
+	* legend
+	*/
+	legend{
+		font-weight: bold;
+		font-size: 1.5em;
+		text-align: left !important;
+		color: $color_legend;
+		text-shadow: 1px 1px 1px $color_legend-shadow;
+	}
+
+}
+
+
+/****
+* legend inside
+*/
+.formanizr.fzr_legend-inside fieldset{
+	padding-top: 5em;
+}
+
+.formanizr.fzr_legend-inside legend{
+	position:absolute;
+	top: 1em;
+	left:1em;
+}

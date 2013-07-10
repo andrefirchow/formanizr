@@ -1,0 +1,190 @@
+/*====================================*\
+	$TYPO
+\*  ----------------------------------*/
+
+.formanizr {
+
+	/****
+	* default label and hint (description)
+	*/
+	label[for]{
+		cursor: pointer;
+	}
+	label,
+	.fzr_hint {
+		height: auto;
+		margin: 0.857em 0 0.214em 0.214em; /* 7px 0 3px 3px */
+		font-weight: normal;
+		color: $color_label;
+		@include inline-block(false);
+	}
+
+		.fzr_hint {
+			color: $color_hint;
+			margin:0;
+		}
+
+
+		/****
+		* label add-on (next to label)
+		*/
+		label .fzr_add-on {
+			display: block;
+			color: $color_hint;
+			margin-top: 0.1em;
+			font-size: 0.8em;
+			line-height: 1.2 !important;
+		}
+		
+			.fzr_label-top label .fzr_add-on{
+				display: inline;
+			}
+		
+
+		/****
+		* error message
+		*/
+		.fzr_error-msg,
+		label.fzr_error-msg{
+			font-size: 0.8em !important;
+			text-align: left !important;
+			display: block;
+			margin-top: 0.5em !important;
+			clear: both;
+			line-height: 1.2 !important;
+			color: $color_error !important;
+		}
+		
+
+	/****
+	* inline - element used for checkboxes and radios
+	*/
+	.fzr_inline{
+		float: left;
+		margin-bottom: 0.5em;
+	}
+
+		.fzr_inline label,
+		label.fzr_inline{
+			margin-right: 1.4em !important;
+			display: inline-block !important;
+			@include inline-block(false);
+			font-weight: normal !important;
+			color: $color_inline-label;
+		}
+
+
+	/****
+	* mandatory
+	*/
+	.fzr_mandatory{
+		font-weight: bold;
+		color: $color_error !important;
+	}
+
+
+	/****
+	* anchors
+	*/
+	a, a:visited{color: $color_anchor;}
+	a:active, a:hover{color: $color_anchor-hover;}
+
+
+	/****
+	* headline
+	*/
+	.fzr_headline{
+		font-size: 1.3em;
+		font-weight: bold;
+		color: $color_text;
+	}
+
+
+	/****
+	* divider
+	*/
+	hr{
+		height: 1px;
+		background-color: $color_divider;
+		border: none;
+		padding: 0;
+		margin: 0 0 1.5em 0;
+	}
+
+
+	/****
+	* selection
+	*/
+	::selection	{background: $color_selection-background; color: $color_selection-text;}
+	::-moz-selection{background: $color_selection-background; color: $color_selection-text;}
+
+}
+
+
+/****
+* label at top
+*/
+.formanizr .fzr_label-top label,
+.formanizr.fzr_label-top label{
+	margin-top: 0;
+	margin-bottom: 0.5em;
+	display: block;
+}
+
+.formanizr .fzr_label-top .fzr_label-middle label,
+.formanizr.fzr_label-top .fzr_label-middle label,
+.formanizr .fzr_label-middle label,
+.formanizr .fzr_label-middle .fzr_hint{
+	height: auto;
+	margin: 0.857em 0 0.214em 0.214em;
+}
+
+
+/****
+* label bold
+*/
+.formanizr .fzr_label-bold label,
+.formanizr.fzr_label-bold label{
+	font-weight: bold;
+}
+
+
+/****
+* label inside inline element
+*/
+.formanizr .fzr_label-top .fzr_inline label,
+.formanizr.fzr_label-top .fzr_inline label{
+	margin-top: 0.7em;
+}
+
+	.formanizr .fzr_label-middle .fzr_inline label{
+		margin-top: 0.857em !important;
+	}
+
+/****
+* label bold
+*/
+.formanizr p{
+	line-height: 1.3em;
+}
+
+
+/****
+* text alignment
+*/
+.formanizr .fzr_right,
+.formanizr.fzr_right,
+.formanizr .fzr_right .fzr_col,
+.formanizr.fzr_right .fzr_col	{
+	text-align: right;
+}
+
+.formanizr .fzr_left,
+.formanizr.fzr_left {
+	text-align: left !important;
+}
+
+.formanizr .fzr_middle,
+.formanizr.fzr_middle {
+	vertical-align: middle;
+}

@@ -1,0 +1,1071 @@
+@charset "UTF-8";
+/*====================================*\** FORMANIZR <<<<<<<<<<<<<<<<<<<<<<<<<<<** Author: Andre Firchow* Website: http://firchow.net/* Name: Formanizr* Version: 0.3 beta* Date: 06.04.2013*\*------------------------------------*/
+/*====================================*\	$IMPORTS\*  ----------------------------------*/
+/*====================================*\
+$VARS
+\*  ----------------------------------*/
+/****
+* border-radius
+*/
+/****
+* heights
+*/
+/*====================================*\
+$COLORS
+\*  ----------------------------------*/
+/****
+* typo
+*/
+/****
+* inputs
+*/
+/****
+* buttons
+*/
+/***** reset some stuff*/
+/*====================================*\
+	$RESET
+\*  ----------------------------------*/
+/* line 5, ../sass/_fzr-reset.scss */
+.box-sizing {
+  display: none;
+}
+
+/* line 6, ../sass/_fzr-reset.scss */
+.no-box-sizing .box-sizing {
+  display: block;
+}
+
+/* line 8, ../sass/_fzr-reset.scss */
+.formanizr {
+  /****
+  * reset 'search-field' styling on webkit
+  */
+}
+/* line 13, ../sass/_fzr-reset.scss */
+.formanizr fieldset,
+.formanizr form,
+.formanizr label,
+.formanizr legend {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* line 29, ../sass/_fzr-reset.scss */
+.formanizr input[type=search]::-webkit-search-cancel-button,
+.formanizr input[type=search]::-webkit-search-decoration,
+.formanizr input[type=search]::-webkit-search-results-button,
+.formanizr input[type=search]::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+}
+/* line 33, ../sass/_fzr-reset.scss */
+.formanizr input[type=search] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+}
+
+/***** global stuff*/
+/*====================================*\
+	$GLOBAL
+\*  ----------------------------------*/
+/****
+* font settings - size/color
+*/
+/* line 8, ../sass/_fzr-global.scss */
+.formanizr {
+  font-size: 14px !important;
+  color: #525759;
+  line-height: 1 !important;
+}
+
+/* line 15, ../sass/_fzr-global.scss */
+.formanizr.fzr_tiny,
+.formanizr .fzr_tiny {
+  font-size: 12px !important;
+}
+
+/* line 17, ../sass/_fzr-global.scss */
+.formanizr.fzr_normal,
+.formanizr .fzr_normal {
+  font-size: 14px !important;
+}
+
+/* line 19, ../sass/_fzr-global.scss */
+.formanizr.fzr_big,
+.formanizr .fzr_big {
+  font-size: 16px !important;
+}
+
+/***** form elements*/
+/*====================================*\
+	$FORMS
+\*  ----------------------------------*/
+/**
+* styling input fields
+*/
+/* line 8, ../sass/_fzr-forms.scss */
+.formanizr {
+  /****
+  * mostly inputs, textareas and selects
+  */
+  /****
+  * multiple select sizes
+  */
+  /****
+  * special corner radius for search-field
+  */
+  /****
+  * html5 elements progress and meter
+  */
+  /****
+  * placeholder
+  */
+  /****
+  * error
+  */
+}
+/* line 26, ../sass/_fzr-forms.scss */
+.formanizr input[type="text"],
+.formanizr input[type="password"],
+.formanizr input[type="file"],
+.formanizr input[type="date"],
+.formanizr input[type="datetime"],
+.formanizr input[type="email"],
+.formanizr input[type="number"],
+.formanizr input[type="search"],
+.formanizr input[type="tel"],
+.formanizr input[type="time"],
+.formanizr input[type="url"],
+.formanizr input[type="range"],
+.formanizr textarea,
+.formanizr select {
+  vertical-align: middle;
+  width: 100%;
+  *width: 99%;
+  /*ie7*/
+  padding: 0.571em;
+  /* 8px */
+  border: 1px solid #bcbcbc;
+  border-color: #bcbcbc #cfcfcf #dedede #cfcfcf;
+  height: 2.714em;
+  /* 38px */
+  background-color: #fafafa;
+  color: #333333;
+  font-size: 1em;
+  /* 14px */
+  font-family: inherit;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 1px 1px inset;
+  -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 1px 1px inset;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 1px 1px inset;
+  -webkit-transition: all 0.6s ease-out;
+  -moz-transition: all 0.6s ease-out;
+  -ms-transition: all 0.6s ease-out;
+  -o-transition: all 0.6s ease-out;
+  transition: all 0.6s ease-out;
+}
+/* line 57, ../sass/_fzr-forms.scss */
+.formanizr input[type="text"]:focus,
+.formanizr input[type="password"]:focus,
+.formanizr input[type="file"]:focus,
+.formanizr input[type="date"]:focus,
+.formanizr input[type="datetime"]:focus,
+.formanizr input[type="email"]:focus,
+.formanizr input[type="number"]:focus,
+.formanizr input[type="search"]:focus,
+.formanizr input[type="tel"]:focus,
+.formanizr input[type="time"]:focus,
+.formanizr input[type="url"]:focus,
+.formanizr input[type="range"]:focus,
+.formanizr textarea:focus,
+.formanizr select:focus {
+  outline: 0;
+  background-color: white;
+  border-color: #999999;
+  color: black;
+  -webkit-box-shadow: rgba(51, 148, 216, 0.4) 0 0 3px 2px;
+  -moz-box-shadow: rgba(51, 148, 216, 0.4) 0 0 3px 2px;
+  box-shadow: rgba(51, 148, 216, 0.4) 0 0 3px 2px;
+}
+/* line 67, ../sass/_fzr-forms.scss */
+.formanizr input[disabled],
+.formanizr textarea[disabled],
+.formanizr select[disabled] {
+  background: #ededed;
+  color: #666666;
+  cursor: not-allowed;
+}
+/* line 78, ../sass/_fzr-forms.scss */
+.formanizr input[readonly],
+.formanizr textarea[readonly],
+.formanizr select[readonly],
+.formanizr input[readonly]:focus,
+.formanizr textarea[readonly]:focus,
+.formanizr select[readonly]:focus {
+  color: #666666;
+  font-style: italic;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -ms-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+}
+/* line 84, ../sass/_fzr-forms.scss */
+.formanizr select {
+  padding: 0.571em 0.5em 0.357em 0.5em;
+  /* 8px 7px 5px 7px*/
+  line-height: 2.286em !important;
+  /* 32px */
+}
+/* line 93, ../sass/_fzr-forms.scss */
+.formanizr select[multiple] {
+  height: 7.143em;
+}
+/* line 97, ../sass/_fzr-forms.scss */
+.formanizr select[multiple].fzr_height-small {
+  height: 4.286em;
+}
+/* line 98, ../sass/_fzr-forms.scss */
+.formanizr select[multiple].fzr_height-large {
+  height: 14.286em;
+}
+/* line 104, ../sass/_fzr-forms.scss */
+.formanizr input[type="search"] {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+}
+/* line 113, ../sass/_fzr-forms.scss */
+.formanizr progress,
+.formanizr meter {
+  width: 100%;
+}
+/* line 121, ../sass/_fzr-forms.scss */
+.formanizr input::-webkit-input-placeholder {
+  color: #8d8b8b;
+}
+/* line 122, ../sass/_fzr-forms.scss */
+.formanizr input:-moz-placeholder {
+  color: #8d8b8b;
+}
+/* line 123, ../sass/_fzr-forms.scss */
+.formanizr input:-ms-input-placeholder {
+  color: #8d8b8b;
+}
+/* line 131, ../sass/_fzr-forms.scss */
+.formanizr input.fzr_error,
+.formanizr select.fzr_error,
+.formanizr textarea.fzr_error {
+  border-color: #a11919 !important;
+}
+
+/****
+* textarea
+*/
+/* line 143, ../sass/_fzr-forms.scss */
+.formanizr textarea {
+  height: 7.143em;
+  min-height: 7.143em;
+  resize: vertical;
+}
+/* line 149, ../sass/_fzr-forms.scss */
+.formanizr textarea.fzr_height-small {
+  height: 4.286em;
+  min-height: 4.286em;
+}
+/* line 150, ../sass/_fzr-forms.scss */
+.formanizr textarea.fzr_height-large {
+  height: 14.286em;
+  min-height: 14.286em;
+}
+/* line 151, ../sass/_fzr-forms.scss */
+.formanizr textarea.fzr_no-resize {
+  resize: none;
+}
+
+/****
+* inline inputs (checkboxes and radios)
+*/
+/* line 161, ../sass/_fzr-forms.scss */
+.formanizr input[type="radio"],
+.formanizr input[type="checkbox"] {
+  position: relative;
+  vertical-align: middle;
+  top: -0.1em;
+  margin: 0;
+}
+
+/****
+* BETA - size for multiple inputs inside of one col
+*/
+/* line 176, ../sass/_fzr-forms.scss */
+.fzr_large,
+.fzr_medium,
+.fzr_small {
+  margin-right: 0.5%;
+}
+
+/* line 179, ../sass/_fzr-forms.scss */
+.fzr_large {
+  width: 65% !important;
+}
+
+/* line 180, ../sass/_fzr-forms.scss */
+.fzr_medium {
+  width: 32% !important;
+}
+
+/* line 181, ../sass/_fzr-forms.scss */
+.fzr_small {
+  width: 19% !important;
+}
+
+/* line 182, ../sass/_fzr-forms.scss */
+.fzr_last {
+  float: right;
+  margin-right: 0;
+}
+
+/*====================================*\
+	$FIELDSET
+\*  ----------------------------------*/
+/* line 5, ../sass/_fzr-fieldset.scss */
+.formanizr {
+  /****
+  * fieldset
+  */
+  /****
+  * legend
+  */
+}
+/* line 10, ../sass/_fzr-fieldset.scss */
+.formanizr fieldset {
+  border: 1px solid #bcbcbc;
+  padding: 1.5em 1.5em 0 1.5em;
+  background-color: white;
+  padding-top: 2.5em;
+  margin-bottom: 1.5em;
+  position: relative;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 1px 0 0;
+  -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 1px 0 0;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 1px 0 0;
+}
+/* line 25, ../sass/_fzr-fieldset.scss */
+.formanizr legend {
+  font-weight: bold;
+  font-size: 1.5em;
+  text-align: left !important;
+  color: #525759;
+  text-shadow: 1px 1px 1px white;
+}
+
+/****
+* legend inside
+*/
+/* line 39, ../sass/_fzr-fieldset.scss */
+.formanizr.fzr_legend-inside fieldset {
+  padding-top: 5em;
+}
+
+/* line 43, ../sass/_fzr-fieldset.scss */
+.formanizr.fzr_legend-inside legend {
+  position: absolute;
+  top: 1em;
+  left: 1em;
+}
+
+/***** typo*/
+/*====================================*\
+	$TYPO
+\*  ----------------------------------*/
+/* line 5, ../sass/_fzr-typo.scss */
+.formanizr {
+  /****
+  * default label and hint (description)
+  */
+  /****
+  * label add-on (next to label)
+  */
+  /****
+  * error message
+  */
+  /****
+  * inline - element used for checkboxes and radios
+  */
+  /****
+  * mandatory
+  */
+  /****
+  * anchors
+  */
+  /****
+  * headline
+  */
+  /****
+  * divider
+  */
+  /****
+  * selection
+  */
+}
+/* line 10, ../sass/_fzr-typo.scss */
+.formanizr label[for] {
+  cursor: pointer;
+}
+/* line 14, ../sass/_fzr-typo.scss */
+.formanizr label,
+.formanizr .fzr_hint {
+  height: auto;
+  margin: 0.857em 0 0.214em 0.214em;
+  /* 7px 0 3px 3px */
+  font-weight: normal;
+  color: #525759;
+  display: -moz-inline-stack;
+  display: inline-block;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+}
+/* line 22, ../sass/_fzr-typo.scss */
+.formanizr .fzr_hint {
+  color: #999999;
+  margin: 0;
+}
+/* line 31, ../sass/_fzr-typo.scss */
+.formanizr label .fzr_add-on {
+  display: block;
+  color: #999999;
+  margin-top: 0.1em;
+  font-size: 0.8em;
+  line-height: 1.2 !important;
+}
+/* line 39, ../sass/_fzr-typo.scss */
+.formanizr .fzr_label-top label .fzr_add-on {
+  display: inline;
+}
+/* line 48, ../sass/_fzr-typo.scss */
+.formanizr .fzr_error-msg,
+.formanizr label.fzr_error-msg {
+  font-size: 0.8em !important;
+  text-align: left !important;
+  display: block;
+  margin-top: 0.5em !important;
+  clear: both;
+  line-height: 1.2 !important;
+  color: #a11919 !important;
+}
+/* line 62, ../sass/_fzr-typo.scss */
+.formanizr .fzr_inline {
+  float: left;
+  margin-bottom: 0.5em;
+}
+/* line 68, ../sass/_fzr-typo.scss */
+.formanizr .fzr_inline label,
+.formanizr label.fzr_inline {
+  margin-right: 1.4em !important;
+  display: inline-block !important;
+  display: -moz-inline-stack;
+  display: inline-block;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  font-weight: normal !important;
+  color: #333333;
+}
+/* line 80, ../sass/_fzr-typo.scss */
+.formanizr .fzr_mandatory {
+  font-weight: bold;
+  color: #a11919 !important;
+}
+/* line 89, ../sass/_fzr-typo.scss */
+.formanizr a, .formanizr a:visited {
+  color: #0278a3;
+}
+/* line 90, ../sass/_fzr-typo.scss */
+.formanizr a:active, .formanizr a:hover {
+  color: #035484;
+}
+/* line 96, ../sass/_fzr-typo.scss */
+.formanizr .fzr_headline {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #525759;
+}
+/* line 106, ../sass/_fzr-typo.scss */
+.formanizr hr {
+  height: 1px;
+  background-color: #cccccc;
+  border: none;
+  padding: 0;
+  margin: 0 0 1.5em 0;
+}
+/* line 118, ../sass/_fzr-typo.scss */
+.formanizr ::selection {
+  background: #196499;
+  color: white;
+}
+/* line 119, ../sass/_fzr-typo.scss */
+.formanizr ::-moz-selection {
+  background: #196499;
+  color: white;
+}
+
+/****
+* label at top
+*/
+/* line 128, ../sass/_fzr-typo.scss */
+.formanizr .fzr_label-top label,
+.formanizr.fzr_label-top label {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  display: block;
+}
+
+/* line 137, ../sass/_fzr-typo.scss */
+.formanizr .fzr_label-top .fzr_label-middle label,
+.formanizr.fzr_label-top .fzr_label-middle label,
+.formanizr .fzr_label-middle label,
+.formanizr .fzr_label-middle .fzr_hint {
+  height: auto;
+  margin: 0.857em 0 0.214em 0.214em;
+}
+
+/****
+* label bold
+*/
+/* line 147, ../sass/_fzr-typo.scss */
+.formanizr .fzr_label-bold label,
+.formanizr.fzr_label-bold label {
+  font-weight: bold;
+}
+
+/****
+* label inside inline element
+*/
+/* line 156, ../sass/_fzr-typo.scss */
+.formanizr .fzr_label-top .fzr_inline label,
+.formanizr.fzr_label-top .fzr_inline label {
+  margin-top: 0.7em;
+}
+
+/* line 160, ../sass/_fzr-typo.scss */
+.formanizr .fzr_label-middle .fzr_inline label {
+  margin-top: 0.857em !important;
+}
+
+/****
+* label bold
+*/
+/* line 167, ../sass/_fzr-typo.scss */
+.formanizr p {
+  line-height: 1.3em;
+}
+
+/****
+* text alignment
+*/
+/* line 178, ../sass/_fzr-typo.scss */
+.formanizr .fzr_right,
+.formanizr.fzr_right,
+.formanizr .fzr_right .fzr_col,
+.formanizr.fzr_right .fzr_col {
+  text-align: right;
+}
+
+/* line 183, ../sass/_fzr-typo.scss */
+.formanizr .fzr_left,
+.formanizr.fzr_left {
+  text-align: left !important;
+}
+
+/* line 188, ../sass/_fzr-typo.scss */
+.formanizr .fzr_middle,
+.formanizr.fzr_middle {
+  vertical-align: middle;
+}
+
+/*====================================*\
+	$BUTTONS
+\*  ----------------------------------*/
+/* line 5, ../sass/_fzr-buttons.scss */
+.formanizr {
+  /****
+  * button standard
+  */
+  /****
+  * override default margins for right aligned button
+  */
+  /****
+  * reset default margins for button
+  */
+  /****
+  * button hover status
+  */
+  /****
+  * button active status
+  */
+  /****
+  * button highlight
+  */
+  /****
+  * button highlight hover
+  */
+  /****
+  * button disabled (all)
+  */
+  /****
+  * button highlight disabled
+  */
+}
+/* line 13, ../sass/_fzr-buttons.scss */
+.formanizr .fzr_button,
+.formanizr input[type="submit"],
+.formanizr input[type="reset"],
+.formanizr button {
+  background: #f9f9f9;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f9f9f9), color-stop(100%, #e9e9e9));
+  background-image: -webkit-linear-gradient(top, #f9f9f9, #e9e9e9);
+  background-image: -moz-linear-gradient(top, #f9f9f9, #e9e9e9);
+  background-image: -o-linear-gradient(top, #f9f9f9, #e9e9e9);
+  background-image: linear-gradient(top, #f9f9f9, #e9e9e9);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: white 0 1px 0 0 inset;
+  -moz-box-shadow: white 0 1px 0 0 inset;
+  box-shadow: white 0 1px 0 0 inset;
+  border: 1px solid #bcbcbc;
+  border-color: #bcbcbc #cfcfcf #dedede #cfcfcf;
+  color: #333333;
+  text-shadow: 1px 1px 0px white;
+  font-size: 1em;
+  padding: 0.571em 1.2em;
+  /* 8px */
+  vertical-align: middle;
+  text-decoration: none;
+  height: 2.714em;
+  /* 38px */
+  margin: 0.5em 1em 0.5em 0;
+  white-space: nowrap;
+  cursor: pointer;
+  overflow: visible;
+  display: -moz-inline-stack;
+  display: inline-block;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+}
+/* line 41, ../sass/_fzr-buttons.scss */
+.formanizr .fzr_right input[type="submit"],
+.formanizr .fzr_right input[type="reset"],
+.formanizr .fzr_right button,
+.formanizr .fzr_right .fzr_button {
+  margin-left: 1em;
+  margin-right: 0;
+}
+/* line 54, ../sass/_fzr-buttons.scss */
+.formanizr input[type="submit"].fzr_no-margin,
+.formanizr input[type="reset"].fzr_no-margin,
+.formanizr button.fzr_no-margin,
+.formanizr .fzr_no-margin .fzr_button,
+.formanizr .fzr_button.fzr_no-margin {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+/* line 66, ../sass/_fzr-buttons.scss */
+.formanizr input[type="submit"]:hover,
+.formanizr input[type="reset"]:hover,
+.formanizr button:hover,
+.formanizr .fzr_button:hover {
+  background: #e9e9e9;
+  background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #f9f9f9), color-stop(100%, #e9e9e9));
+  background-image: -webkit-linear-gradient(bottom, #f9f9f9, #e9e9e9);
+  background-image: -moz-linear-gradient(bottom, #f9f9f9, #e9e9e9);
+  background-image: -o-linear-gradient(bottom, #f9f9f9, #e9e9e9);
+  background-image: linear-gradient(bottom, #f9f9f9, #e9e9e9);
+  color: black;
+}
+/* line 79, ../sass/_fzr-buttons.scss */
+.formanizr input[type="submit"]:active,
+.formanizr input[type="reset"]:active,
+.formanizr button:active,
+.formanizr .fzr_button:active {
+  position: relative;
+  top: 1px;
+}
+/* line 91, ../sass/_fzr-buttons.scss */
+.formanizr input[type="submit"].fzr_highlight,
+.formanizr input[type="reset"].fzr_highlight,
+.formanizr button.fzr_highlight,
+.formanizr .fzr_button.fzr_highlight {
+  -webkit-box-shadow: #0acaf9 0 1px 0 0 inset;
+  -moz-box-shadow: #0acaf9 0 1px 0 0 inset;
+  box-shadow: #0acaf9 0 1px 0 0 inset;
+  background: #009ec3;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #009ec3), color-stop(100%, #035484));
+  background-image: -webkit-linear-gradient(top, #009ec3, #035484);
+  background-image: -moz-linear-gradient(top, #009ec3, #035484);
+  background-image: -o-linear-gradient(top, #009ec3, #035484);
+  background-image: linear-gradient(top, #009ec3, #035484);
+  border: 1px solid #035484;
+  color: white;
+  text-shadow: 1px 1px 0px #035484;
+}
+/* line 107, ../sass/_fzr-buttons.scss */
+.formanizr input[type="submit"].fzr_highlight:hover,
+.formanizr input[type="reset"].fzr_highlight:hover,
+.formanizr button.fzr_highlight:hover,
+.formanizr .frz-button.fzr_highlight:hover {
+  background: #035484;
+  background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #009ec3), color-stop(100%, #035484));
+  background-image: -webkit-linear-gradient(bottom, #009ec3, #035484);
+  background-image: -moz-linear-gradient(bottom, #009ec3, #035484);
+  background-image: -o-linear-gradient(bottom, #009ec3, #035484);
+  background-image: linear-gradient(bottom, #009ec3, #035484);
+}
+/* line 131, ../sass/_fzr-buttons.scss */
+.formanizr input[type="submit"][disabled=disabled],
+.formanizr input[type="reset"][disabled=disabled],
+.formanizr button.disabled,
+.formanizr .fzr_button.disabled,
+.formanizr input[type="submit"].fzr_highlight[disabled=disabled],
+.formanizr input[type="reset"].fzr_highlight[disabled=disabled],
+.formanizr button.fzr_highlight.disabled,
+.formanizr .fzr_button.fzr_highlight.disabled,
+.formanizr input[type="submit"][disabled=disabled]:hover,
+.formanizr input[type="reset"][disabled=disabled]:hover,
+.formanizr button.disabled:hover,
+.formanizr .fzr_button.disabled:hover,
+.formanizr input[type="submit"].fzr_highlight[disabled=disabled]:hover,
+.formanizr input[type="reset"].fzr_highlight[disabled=disabled]:hover,
+.formanizr button.fzr_highlight.disabled:hover,
+.formanizr .fzr_button.fzr_highlight.disabled:hover {
+  top: 0 !important;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -ms-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+  cursor: not-allowed;
+  background: #f9f9f9;
+  color: #999999;
+  text-shadow: none;
+}
+/* line 151, ../sass/_fzr-buttons.scss */
+.formanizr input[type="submit"].fzr_highlight[disabled=disabled],
+.formanizr input[type="reset"].fzr_highlight[disabled=disabled],
+.formanizr button.fzr_highlight.disabled,
+.formanizr .fzr_button.fzr_highlight.disabled,
+.formanizr input[type="submit"].fzr_highlight[disabled=disabled]:hover,
+.formanizr input[type="reset"].fzr_highlight[disabled=disabled]:hover,
+.formanizr button.fzr_highlight.disabled:hover,
+.formanizr .fzr_button.fzr_highlight.disabled:hover {
+  background: #9abdd0;
+  color: #e1ebf1;
+}
+
+/*====================================*\
+	$ICONS
+\*  ----------------------------------*/
+/* line 5, ../sass/_fzr-icons.scss */
+[class^="fzr_icon-"] {
+  background-position: 5px center;
+  background-repeat: no-repeat;
+  padding-left: 30px !important;
+}
+
+/****
+* icon images
+*/
+/* line 15, ../sass/_fzr-icons.scss */
+.fzr_icon-time {
+  background-image: url(../img/formanizr/icons/time.png);
+}
+
+/* line 16, ../sass/_fzr-icons.scss */
+.fzr_icon-date {
+  background-image: url(../img/formanizr/icons/date.png);
+}
+
+/* line 17, ../sass/_fzr-icons.scss */
+.fzr_icon-search {
+  background-image: url(../img/formanizr/icons/search.png);
+}
+
+/* line 18, ../sass/_fzr-icons.scss */
+.fzr_icon-email {
+  background-image: url(../img/formanizr/icons/email.png);
+}
+
+/* line 19, ../sass/_fzr-icons.scss */
+.fzr_icon-url {
+  background-image: url(../img/formanizr/icons/url.png);
+}
+
+/* line 20, ../sass/_fzr-icons.scss */
+.fzr_icon-phone {
+  background-image: url(../img/formanizr/icons/phone.png);
+}
+
+/* line 21, ../sass/_fzr-icons.scss */
+.fzr_icon-number {
+  background-image: url(../img/formanizr/icons/number.png);
+}
+
+/* line 22, ../sass/_fzr-icons.scss */
+.fzr_icon-range {
+  background-image: url(../img/formanizr/icons/range.png);
+}
+
+/***** layout*/
+/*====================================*\
+	$GRID
+\*  ----------------------------------*/
+/****
+* row
+*/
+/* line 8, ../sass/_fzr-grid.scss */
+.fzr_row {
+  margin: 0 0 1.5em -1.66667%;
+}
+
+/****
+* clearfix for row
+*/
+/* line 9, ../sass/_mixins.scss */
+.fzr_row:before, .fzr_row:after {
+  content: " ";
+  display: table;
+}
+/* line 13, ../sass/_mixins.scss */
+.fzr_row:after {
+  clear: both;
+}
+/* line 16, ../sass/_mixins.scss */
+.fzr_row {
+  *zoom: 1;
+}
+
+/****
+* col
+*/
+/* line 20, ../sass/_fzr-grid.scss */
+.fzr_col {
+  display: block;
+  float: left;
+  text-align: left;
+  margin-left: 1.66666666666%;
+  vertical-align: middle;
+}
+
+/****
+* sizes of the cols
+*/
+/* line 32, ../sass/_fzr-grid.scss */
+.fzr_1 {
+  width: 6.6666666666667%;
+}
+
+/* line 33, ../sass/_fzr-grid.scss */
+.fzr_2 {
+  width: 15.0%;
+}
+
+/* line 34, ../sass/_fzr-grid.scss */
+.fzr_3 {
+  width: 23.333333333333%;
+}
+
+/* line 35, ../sass/_fzr-grid.scss */
+.fzr_4 {
+  width: 31.666666666667%;
+}
+
+/* line 36, ../sass/_fzr-grid.scss */
+.fzr_5 {
+  width: 40%;
+}
+
+/* line 37, ../sass/_fzr-grid.scss */
+.fzr_6 {
+  width: 48.333333333333%;
+}
+
+/* line 38, ../sass/_fzr-grid.scss */
+.fzr_7 {
+  width: 56.666666666667%;
+}
+
+/* line 39, ../sass/_fzr-grid.scss */
+.fzr_8 {
+  width: 65.0%;
+}
+
+/* line 40, ../sass/_fzr-grid.scss */
+.fzr_9 {
+  width: 73.333333333333%;
+}
+
+/* line 41, ../sass/_fzr-grid.scss */
+.fzr_10 {
+  width: 81.666666666667%;
+}
+
+/* line 42, ../sass/_fzr-grid.scss */
+.fzr_11 {
+  width: 90%;
+}
+
+/* line 43, ../sass/_fzr-grid.scss */
+.fzr_12 {
+  width: 98.333333333333%;
+}
+
+/* line 45, ../sass/_fzr-grid.scss */
+.fzr_alpha {
+  margin-left: 0px;
+}
+
+/* line 46, ../sass/_fzr-grid.scss */
+.fzr_omega {
+  margin-right: 0px;
+}
+
+/*====================================*\
+	$RESPONSIVE
+\*  ----------------------------------*/
+@media only screen and (max-width: 767px) {
+  /* line 7, ../sass/_fzr-responsive.scss */
+  .formanizr {
+    -webkit-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+  }
+
+  /* line 9, ../sass/_fzr-responsive.scss */
+  .fzr_row {
+    margin: 0;
+  }
+
+  /* line 11, ../sass/_fzr-responsive.scss */
+  .fzr_col {
+    width: 100%;
+    float: none;
+    margin-left: 0;
+    margin-bottom: 0.5em;
+  }
+
+  /* line 18, ../sass/_fzr-responsive.scss */
+  .fzr_inline {
+    margin-bottom: 1em;
+  }
+
+  /* line 22, ../sass/_fzr-responsive.scss */
+  .formanizr label {
+    margin: 0 0 0.5em 0;
+    display: block;
+  }
+
+  /* line 28, ../sass/_fzr-responsive.scss */
+  .formanizr .fzr_inline label,
+  .formanizr label.fzr_inline {
+    margin: 0.857em 1.4em 0.214em 0.214em;
+  }
+
+  /* line 39, ../sass/_fzr-responsive.scss */
+  .formanizr input,
+  .formanizr select,
+  .formanizr textarea,
+  .fzr_button,
+  input[type="submit"],
+  input[type="reset"],
+  button {
+    margin: 0 0 1em 0 !important;
+    width: 100%;
+  }
+
+  /* line 46, ../sass/_fzr-responsive.scss */
+  .fzr_large,
+  .fzr_medium,
+  .fzr_small {
+    width: 100% !important;
+    margin-bottom: 1em;
+  }
+
+  /* line 52, ../sass/_fzr-responsive.scss */
+  .fzr_right,
+  .fzr_right .fzr_col {
+    text-align: left;
+  }
+
+  /* clearfix col */
+  /* line 9, ../sass/_mixins.scss */
+  .fzr_col:before, .fzr_col:after {
+    content: " ";
+    display: table;
+  }
+  /* line 13, ../sass/_mixins.scss */
+  .fzr_col:after {
+    clear: both;
+  }
+  /* line 16, ../sass/_mixins.scss */
+  .fzr_col {
+    *zoom: 1;
+  }
+}
+/****
+* example media queries
+*
+* Smaller than standard 960 (devices and browsers)
+  @media only screen and (max-width: 959px) {}
+*
+* Tablet Portrait size to standard 960 (devices and browsers)
+  @media only screen and (min-width: 768px) and (max-width: 959px) {}
+*
+* All Mobile Sizes (devices and browser)
+  @media only screen and (max-width: 767px) {}
+*
+* Mobile Landscape Size to Tablet Portrait (devices and browsers)
+  @media only screen and (min-width: 480px) and (max-width: 767px) {}
+*
+* Mobile Portrait Size to Mobile Landscape Size (devices and browsers)
+  @media only screen and (max-width: 479px) {}
+*
+*/
+/*====================================*\
+	$PRINT
+\*  ----------------------------------*/
+@media print {
+  /* line 7, ../sass/_fzr-print.scss */
+  .formanizr {
+    /****
+    * icons
+    */
+  }
+  /* line 12, ../sass/_fzr-print.scss */
+  .formanizr [class^="fzr_icon-"] {
+    background-image: none;
+    background-repeat: no-repeat;
+    padding-left: 0.571em !important;
+  }
+}

@@ -1,0 +1,185 @@
+/*====================================*\
+	$FORMS
+\*  ----------------------------------*/
+
+/**
+* styling input fields
+*/
+.formanizr{
+
+	/****
+	* mostly inputs, textareas and selects
+	*/
+	input[type="text"],
+	input[type="password"],
+	input[type="file"],
+	input[type="date"],
+	input[type="datetime"],
+	input[type="email"],
+	input[type="number"],
+	input[type="search"],
+	input[type="tel"],
+	input[type="time"],
+	input[type="url"],
+	input[type="range"],
+	textarea,
+	select{
+		vertical-align: middle;
+		width: 100%;
+		*width: 99%;/*ie7*/
+		padding:0.571em; /* 8px */
+		border: 1px solid $color_input-border-top;
+		border-color:$color_input-border-top $color_input-border-right $color_input-border-bottom $color_input-border-left;
+		height: 2.714em; /* 38px */
+		background-color: $color_input-background;
+		color:$color_input-text;
+		font-size: 1em; /* 14px */
+		font-family:inherit;
+		@include vendor(box-sizing, border-box);
+		@include border-radius($border-radius);
+		@include box-shadow($color_input-shadow 0 1px 1px inset);
+		@include vendor(transition, all 0.6s ease-out);
+	}
+
+		input[type="text"]:focus,
+		input[type="password"]:focus,
+		input[type="file"]:focus,
+		input[type="date"]:focus,
+		input[type="datetime"]:focus,
+		input[type="email"]:focus,
+		input[type="number"]:focus,
+		input[type="search"]:focus,
+		input[type="tel"]:focus,
+		input[type="time"]:focus,
+		input[type="url"]:focus,
+		input[type="range"]:focus,
+		textarea:focus,
+		select:focus{
+			outline: 0;
+			background-color: $color_input-background-focus;
+			border-color: $color_input-border-focus;
+			color: $color_input-focus;
+			@include box-shadow($color_input-border-focus-glow 0 0 3px 2px);
+		}
+		
+		input[disabled],
+		textarea[disabled],
+		select[disabled]{
+			background: $color_input-background-disabled;
+			color: $color_input-disabled;
+			cursor: not-allowed;
+		}
+
+		input[readonly],
+		textarea[readonly],
+		select[readonly],
+		input[readonly]:focus,
+		textarea[readonly]:focus,
+		select[readonly]:focus{
+			color: $color_input-disabled;
+			font-style: italic;
+			@include vendor(box-shadow, none);
+		}
+
+	select {
+		padding: 0.571em 0.5em 0.357em 0.5em; /* 8px 7px 5px 7px*/
+		line-height: 2.286em !important; /* 32px */
+	}
+
+
+	/****
+	* multiple select sizes
+	*/
+	select[multiple]{
+		height: $height_multi-element;
+	}
+
+		select[multiple].fzr_height-small{height: $height_multi-element-small;}
+		select[multiple].fzr_height-large{height: $height_multi-element-large;}
+
+
+	/****
+	* special corner radius for search-field
+	*/
+	input[type="search"]{
+		@include border-radius($border-radius-search);
+	}
+
+
+	/****
+	* html5 elements progress and meter
+	*/
+	progress,
+	meter{
+		width: 100%;
+	}
+
+
+	/****
+	* placeholder
+	*/
+	input::-webkit-input-placeholder{color: $color_input-placeholder;}
+	input:-moz-placeholder{color: $color_input-placeholder;}
+	input:-ms-input-placeholder{color: $color_input-placeholder;}
+
+
+	/****
+	* error
+	*/
+	input.fzr_error,
+	select.fzr_error,
+	textarea.fzr_error{
+		border-color: $color_error !important;
+	}
+
+}
+
+
+/****
+* textarea
+*/
+.formanizr {
+	
+	textarea {
+		height: $height_multi-element;
+		min-height: $height_multi-element;
+		resize: vertical;
+	}
+
+		textarea.fzr_height-small{height: $height_multi-element-small;min-height: $height_multi-element-small;}
+		textarea.fzr_height-large{height: $height_multi-element-large;min-height: $height_multi-element-large;}
+		textarea.fzr_no-resize {resize: none;}
+
+}
+
+
+/****
+* inline inputs (checkboxes and radios)
+*/
+.formanizr {
+	input[type="radio"],
+	input[type="checkbox"] {
+		position: relative;
+		vertical-align: middle;
+		top: -0.1em;
+		margin: 0;
+	}
+}
+
+
+
+/****
+* BETA - size for multiple inputs inside of one col
+*/
+.fzr_large,
+.fzr_medium,
+.fzr_small{
+	margin-right: 0.5%;
+}
+.fzr_large	{width: 65% !important;}
+.fzr_medium	{width: 32% !important;}
+.fzr_small	{width: 19% !important;}
+	.fzr_last{
+		float: right;
+		margin-right: 0;
+	}

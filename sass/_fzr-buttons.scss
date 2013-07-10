@@ -1,0 +1,156 @@
+/*====================================*\
+	$BUTTONS
+\*  ----------------------------------*/
+
+.formanizr{
+
+	/****
+	* button standard
+	*/
+	.fzr_button,
+	input[type="submit"],
+	input[type="reset"],
+	button {
+		background: $color_button-gradient-first;
+		@include background-image(linear-gradient(top, $color_button-gradient-first, $color_button-gradient-second));
+		@include border-radius($border-radius);
+		@include box-shadow($color_button-box-shadow 0 1px 0 0 inset);
+		border: 1px solid $color_input-border-top;
+		border-color:$color_input-border-top $color_input-border-right $color_input-border-bottom $color_input-border-left;
+		color:$color_button-text;
+		text-shadow:1px 1px 0px $color_button-text-shadow;
+		font-size:1em;
+		padding:0.571em 1.2em; /* 8px */
+		vertical-align: middle;
+		text-decoration:none;
+		height: 2.714em; /* 38px */
+		margin: 0.5em 1em 0.5em 0;
+		white-space:nowrap;
+		cursor:pointer;
+		overflow:visible;
+		@include inline-block(false);
+	}
+
+
+		/****
+		* override default margins for right aligned button
+		*/
+		.fzr_right input[type="submit"],
+		.fzr_right input[type="reset"],
+		.fzr_right button,
+		.fzr_right .fzr_button {
+			margin-left: 1em;
+			margin-right: 0;
+		}
+
+
+		/****
+		* reset default margins for button
+		*/
+		input[type="submit"].fzr_no-margin,
+		input[type="reset"].fzr_no-margin,
+		button.fzr_no-margin,
+		.fzr_no-margin .fzr_button,
+		.fzr_button.fzr_no-margin{
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+
+
+			/****
+			* button hover status
+			*/
+			input[type="submit"]:hover,
+			input[type="reset"]:hover,
+			button:hover,
+			.fzr_button:hover {
+				background: $color_button-gradient-second;
+				@include background-image(linear-gradient(bottom, $color_button-gradient-first, $color_button-gradient-second));
+				color: $color_button-text-hover;
+			}
+
+
+			/****
+			* button active status
+			*/
+			input[type="submit"]:active,
+			input[type="reset"]:active,
+			button:active,
+			.fzr_button:active {
+				position:relative;
+				top:1px;
+			}
+
+
+	/****
+	* button highlight
+	*/
+	input[type="submit"].fzr_highlight,
+	input[type="reset"].fzr_highlight,
+	button.fzr_highlight,
+	.fzr_button.fzr_highlight {
+		@include box-shadow($color_button-highlight-box-shadow 0 1px 0 0 inset);
+		background: $color_button-highlight-gradient-first;
+		@include background-image(linear-gradient(top, $color_button-highlight-gradient-first, $color_button-highlight-gradient-second));
+		border: 1px solid $color_button-highlight-gradient-second;
+		color:$color_button-highlight-text;
+		text-shadow:1px 1px 0px $color_button-highlight-gradient-second;
+	}
+
+
+		/****
+		* button highlight hover
+		*/
+		input[type="submit"].fzr_highlight:hover,
+		input[type="reset"].fzr_highlight:hover,
+		button.fzr_highlight:hover,
+		.frz-button.fzr_highlight:hover {
+			background: $color_button-highlight-gradient-second;
+			@include background-image(linear-gradient(bottom, $color_button-highlight-gradient-first, $color_button-highlight-gradient-second));
+		}
+
+
+	/****
+	* button disabled (all)
+	*/
+	input[type="submit"][disabled=disabled],
+	input[type="reset"][disabled=disabled],
+	button.disabled,
+	.fzr_button.disabled,
+	input[type="submit"].fzr_highlight[disabled=disabled],
+	input[type="reset"].fzr_highlight[disabled=disabled],
+	button.fzr_highlight.disabled,
+	.fzr_button.fzr_highlight.disabled,
+	input[type="submit"][disabled=disabled]:hover,
+	input[type="reset"][disabled=disabled]:hover,
+	button.disabled:hover,
+	.fzr_button.disabled:hover,
+	input[type="submit"].fzr_highlight[disabled=disabled]:hover,
+	input[type="reset"].fzr_highlight[disabled=disabled]:hover,
+	button.fzr_highlight.disabled:hover,
+	.fzr_button.fzr_highlight.disabled:hover{
+		top:0 !important;
+		@include vendor(box-shadow, none);
+		cursor: not-allowed;
+		background: $color_button-gradient-first;
+		color:$color_button-text-disabled;
+		text-shadow:none;
+	}
+
+
+		/****
+		* button highlight disabled
+		*/
+		input[type="submit"].fzr_highlight[disabled=disabled],
+		input[type="reset"].fzr_highlight[disabled=disabled],
+		button.fzr_highlight.disabled,
+		.fzr_button.fzr_highlight.disabled,
+		input[type="submit"].fzr_highlight[disabled=disabled]:hover,
+		input[type="reset"].fzr_highlight[disabled=disabled]:hover,
+		button.fzr_highlight.disabled:hover,
+		.fzr_button.fzr_highlight.disabled:hover{
+			background: $color_button-highlight-bg-disabled;
+			color:$color_button-highlight-text-disabled;
+		}
+
+}
