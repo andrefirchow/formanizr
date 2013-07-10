@@ -2,11 +2,18 @@
 
 > Small HTML/CSS framework to create nice cross-browser webforms.
 
-## See it in action
-Please check the [formanizr website](http://formanizr.firchow.net) for [DEMO](http://formanizr.firchow.net) and [Introduction](http://formanizr.firchow.net).
+## Good looking HTML/CSS3 forms
 
-#### test
-this is just a short test
+
+## See it in action ([DEMO](http://formanizr.firchow.net))
+Please check the [formanizr](http://formanizr.firchow.net) website for some [demos](http://formanizr.firchow.net) and [introductions](http://formanizr.firchow.net).
+
+#### Features
+- flexible & responsive grid
+- pure HTML/CSS - no graphics
+- themeable - formazir included 2 themes
+- valid markup
+- HTML5
 
 ```css
 .border {
