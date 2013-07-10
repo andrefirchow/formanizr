@@ -1,4 +1,4 @@
-# formanizr
+# formanizr (beta)
 
 > Small HTML/CSS framework to create nice cross-browser webforms.
 
