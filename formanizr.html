@@ -6,7 +6,13 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>formanizr</title>
+		<title>formanizr - small HTML/CSS framework to create nice cross-browser webforms</title>
+
+		<style type="text/css">
+			/* styles for this example page */
+			.wrapper{width: 90%; margin: 50px auto;}
+			.intro{margin: 0 0 50px 0;}
+		</style>
 	 	
 	 	<link rel="stylesheet" href="css/formanizr.css">
 	 	<link rel="stylesheet" href="css/fzr_theme-dark.css">
@@ -14,26 +20,24 @@
 	</head>
 	<body>
 
+	<section class="wrapper">
+
 
 	<header>
-		<h2>Übersicht Formular-Elemente</h2>
+		<h2>formanizr - example page</h2>
 	</header>
 
 
-	<p>
-		Hier sind alle Formular-Elemente die mit formanizr gestylte werden aufgeführt. Neben den eigentlichen Formular-Komponentnen gehören auch
-		Überschriften, Paragraphs, Fehlermeldungen, Trennlinien und unterschiedliche Ausrichtungen der Labels innerhalb des Formulars dazu.
-	</p>
-
-	<p>
-		Die Labels auf dieser Übersichtsseite haben kein <a href="http://www.w3schools.com/tags/tag_label.asp" target="_blank" rel="nofollow">for-Attribut</a> für ein bestimmtes Formularelement, daher sind die Labels in diesem Beispiel
-		nicht klickbar und auch der Mauszeiger verändert sich bei einem hover nicht.
+	<p class="intro">
+		This example page shows the most relevant html form-elements and the way they look when you use the formanizr framework.
+		<br>
+		In addition to the form-elements I add some other usefull html elements like paragraphs, headlines, error messages and rulers.
 	</p>
 
 	<!--  -->
 	<form class="formanizr fzr_legend-inside fzr_label-top">
 		<fieldset>
-			<legend>Alle Formular-Elemente auf einen Blick</legend>
+			<legend>Form elements</legend>
 			
 			<hr/>
 
@@ -437,6 +441,8 @@
 
 		</fieldset>
 	</form>
+
+	</section>
 
 </body>
 </html>
