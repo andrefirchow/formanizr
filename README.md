@@ -22,6 +22,15 @@ Please check the [formanizr](http://formanizr.firchow.net) website for [demos](h
 </form>
 ```
 
+### Options
+There are several options you can set on the initialized formanizr-container or directly on a specific element (label, row, ...).
+
+- Theme (fzr_theme-dark)
+- Font size (fzr_tiny, fzr_normal (default) oder fzr_big)
+- Position of legend inside a fieldset (fzr_legend-inside)
+- Position of label (fzr_right and/or fzr_label-top)
+- Font weight for label(s) (fzr_label-bold)
+
 ```html
 <!-- initialize with options -->
 <section class="formanizr fzr_tiny fzr_label-bold fzr_legend-inside fzr_theme-dark">
