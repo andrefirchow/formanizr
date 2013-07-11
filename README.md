@@ -25,13 +25,15 @@ Please check the [formanizr](http://formanizr.firchow.net) website for [demos](h
 ```
 
 ### Options
-There are several options you can set on the initialized formanizr-container or directly on a specific element (label, row, ...).
+There are several options you can set on the initialized formanizr-container or directly on a specific element (label, row, ...). All optional classes will prefixed with `fzr_`.
 
-- Theme (_fzr_theme-dark_**)
-- Font size (_fzr_tiny_**, _fzr_normal_** (default) oder _fzr_big_**)
-- Position of legend inside a fieldset (_fzr_legend-inside_**)
-- Position of label (_fzr_right_** and/or _fzr_label-top_**)
-- Font weight for label(s) (_fzr_label-bold_**)
+`code`
+
+- Theme (`fzr_theme-dark`)
+- Font size (`fzr_tiny`, `fzr_normal` (default) oder `fzr_big`)
+- Position of legend inside a fieldset (`fzr_legend-inside`)
+- Position of label (`fzr_right` and/or `fzr_label-top`)
+- Font weight for label(s) (`fzr_label-bold`)
 
 ```html
 <!-- initialize with options -->
