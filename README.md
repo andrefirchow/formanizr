@@ -2,22 +2,21 @@
 
 > Small HTML/CSS framework to create nice cross-browser webforms.
 
-## Flexible stylish HTML/CSS3 forms
+## Stylish flexible and fluid HTML/CSS3 forms
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
 
-## See it in action ([DEMO](http://formanizr.firchow.net))
-Please check the [formanizr](http://formanizr.firchow.net) website for some [demos](http://formanizr.firchow.net) and [introductions](http://formanizr.firchow.net).
+## See it in action ([DEMO](http://formanizr.firchow.net/beispiele.php))
+Please check the [formanizr](http://formanizr.firchow.net) website for some [demos](http://formanizr.firchow.net/beispiele.php) and [introductions](http://formanizr.firchow.net/dokumentation.php).
 
 #### Features
-- flexible & responsive form-grid
+- fluid & responsive form-grid
 - pure HTML/CSS - no graphics (optional icons)
 - themeable - formanizr included 2 themes
-- valid markup
-- HTML5
+- valid HTML5 markup
 - no JavaScript
 
-```css
-.border {
-  border: 1px solid red;
-}
+```html
+<form class="formanizr">
+    <!-- Hier kommt der eigentliche Formular-Code -->
+</form>
 ```
